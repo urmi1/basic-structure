@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9F0286EB17B399B600A78B39 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0286EA17B399B600A78B39 /* LocationManager.m */; };
+		9F10B32917D8C0F40068FC31 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32317D8C0F40068FC31 /* List.m */; };
+		9F10B32A17D8C0F40068FC31 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32517D8C0F40068FC31 /* Login.m */; };
+		9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32717D8C0F40068FC31 /* APIClient.m */; };
+		9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32E17D8C3C60068FC31 /* CustomCell.m */; };
+		9F10B33117D8C3C60068FC31 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F10B32F17D8C3C60068FC31 /* CustomCell.xib */; };
 		9F17D41D17532AF60045C504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D41C17532AF60045C504 /* UIKit.framework */; };
 		9F17D41F17532AF60045C504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D41E17532AF60045C504 /* Foundation.framework */; };
 		9F17D42117532AF60045C504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D42017532AF60045C504 /* CoreGraphics.framework */; };
@@ -62,6 +67,16 @@
 		2CF854E8C66849BEBD452A73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9F0286E917B399B600A78B39 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		9F0286EA17B399B600A78B39 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		9F10B32217D8C0F40068FC31 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		9F10B32317D8C0F40068FC31 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		9F10B32417D8C0F40068FC31 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		9F10B32517D8C0F40068FC31 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		9F10B32617D8C0F40068FC31 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		9F10B32717D8C0F40068FC31 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		9F10B32817D8C0F40068FC31 /* APIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKit.h; sourceTree = "<group>"; };
+		9F10B32D17D8C3C60068FC31 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9F10B32E17D8C3C60068FC31 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9F10B32F17D8C3C60068FC31 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		9F17D41917532AF60045C504 /* BasicStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F17D41C17532AF60045C504 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F17D41E17532AF60045C504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -168,6 +183,38 @@
 			path = LocationController;
 			sourceTree = "<group>";
 		};
+		9F10B32017D8C0F40068FC31 /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				9F10B32117D8C0F40068FC31 /* Models */,
+				9F10B32817D8C0F40068FC31 /* APIKit.h */,
+				9F10B32617D8C0F40068FC31 /* APIClient.h */,
+				9F10B32717D8C0F40068FC31 /* APIClient.m */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
+		9F10B32117D8C0F40068FC31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F10B32217D8C0F40068FC31 /* List.h */,
+				9F10B32317D8C0F40068FC31 /* List.m */,
+				9F10B32417D8C0F40068FC31 /* Login.h */,
+				9F10B32517D8C0F40068FC31 /* Login.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F10B32C17D8C3C60068FC31 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F10B32D17D8C3C60068FC31 /* CustomCell.h */,
+				9F10B32E17D8C3C60068FC31 /* CustomCell.m */,
+				9F10B32F17D8C3C60068FC31 /* CustomCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		9F17D41017532AF60045C504 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +251,8 @@
 		9F17D42217532AF60045C504 /* BasicStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9F10B32C17D8C3C60068FC31 /* CustomCell */,
+				9F10B32017D8C0F40068FC31 /* WebClient */,
 				9FB6ECE51786D3E900D158D4 /* Theme */,
 				9FC41E00175F11310056FF20 /* Library */,
 				9FC41E0B175F118A0056FF20 /* Headers */,
@@ -567,6 +616,7 @@
 				9FC41E53175F2C450056FF20 /* done_button.png in Resources */,
 				9FC41E54175F2C450056FF20 /* done_button@2x.png in Resources */,
 				9FB6ECEB1786D3E900D158D4 /* Themes.plist in Resources */,
+				9F10B33117D8C3C60068FC31 /* CustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +685,10 @@
 				9F1C27FF17ABEC3B00D37F23 /* UIViewController+Orientation.m in Sources */,
 				9F0286EB17B399B600A78B39 /* LocationManager.m in Sources */,
 				9F499A5917D4CAA8004EDD02 /* ParseHelper.m in Sources */,
+				9F10B32917D8C0F40068FC31 /* List.m in Sources */,
+				9F10B32A17D8C0F40068FC31 /* Login.m in Sources */,
+				9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */,
+				9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

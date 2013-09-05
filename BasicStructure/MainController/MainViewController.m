@@ -26,25 +26,35 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)addImageCall{
-    [Helper displayLoadingView:self.view viewController:self andMessage:kPleaseWait];
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:0],@"user_id",nil];
-    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[kWebserviceURL toURL]];
-    NSMutableURLRequest * request = [httpClient multipartFormRequestWithMethod:@"POST" path:@""  parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData){
-        [formData appendPartWithFileData:UIImagePNGRepresentation([UIImage imageNamed:@""]) name:@"name" fileName:@"filename" mimeType:@"image/png"];
-    }];
-    
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject){
-        NSData *data = (NSData *)responseObject;
-        NSDictionary* jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSLog(@"jsonresponse %@",jsonResponse);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error){
+-(void)sampleAPIClientCall{
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"value",@"key",@"morevalue" ,@"morekey",nil];
+    [[APIClient sharedClient] getAccount:params success:^(Login *account) {
+        [Helper hideLoadingView:self.view viewController:self];
+    } failure:^(NSError *error) {
         [Helper showAlertView:@"Failed" withMessage:[error localizedDescription] delegate:nil];
         [Helper hideLoadingView:self.view viewController:self];
     }];
-    [operation start];
 }
+
+//-(void)addImageCall{
+//    [Helper displayLoadingView:self.view viewController:self andMessage:kPleaseWait];
+//    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:0],@"user_id",nil];
+//    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[kWebserviceURL toURL]];
+//    NSMutableURLRequest * request = [httpClient multipartFormRequestWithMethod:@"POST" path:@""  parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData){
+//        [formData appendPartWithFileData:UIImagePNGRepresentation([UIImage imageNamed:@""]) name:@"name" fileName:@"filename" mimeType:@"image/png"];
+//    }];
+//    
+//    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+//    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
+//    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject){
+//        NSData *data = (NSData *)responseObject;
+//        NSDictionary* jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+//        NSLog(@"jsonresponse %@",jsonResponse);
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error){
+//        [Helper showAlertView:@"Failed" withMessage:[error localizedDescription] delegate:nil];
+//        [Helper hideLoadingView:self.view viewController:self];
+//    }];
+//    [operation start];
+//}
 
 @end

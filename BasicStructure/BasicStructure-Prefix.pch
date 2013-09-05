@@ -21,6 +21,5 @@
     #import "UIColor+extras.h"
     #import "UIView+extras.h"
     #import "NSString+extras.h"
-    #import "AFHTTPClient.h"
-    #import "AFHTTPRequestOperation.h"
+    #import "APIClient.h"
 #endif

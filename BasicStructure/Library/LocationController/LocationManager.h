@@ -1,9 +1,9 @@
 //
 //  LocationManager.h
-//  
+//  BasicStructure
 //
-//  Created by Jennis on 11/15/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by __CompanyName__ on 27/05/13.
+//  Copyright (c) 2013 __CompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

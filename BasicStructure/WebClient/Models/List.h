@@ -1,5 +1,5 @@
 //
-//  UINavigationController+autorotate.h
+//  Contacts.h
 //  BasicStructure
 //
 //  Created by __CompanyName__ on 27/05/13.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UINavigationController (autorotate)
+@interface List : NSObject
+
+@property (nonatomic,strong) NSString *strListName;
+
+-(id)initWithDictionary:(NSDictionary*)dict;
 
 @end

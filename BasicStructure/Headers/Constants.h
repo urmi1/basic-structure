@@ -1,5 +1,5 @@
 /*
- *  Common.h
+ *  Constants.h
  *  BasicStructure
  *
  *  Created by _MyCompanyName_ on 31/08/11.

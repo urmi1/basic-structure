@@ -1,5 +1,5 @@
 /*
- *  ClsMessages.h
+ *  Messages.h
  *  BasicStructure
  *
  *  Created by _MyCompanyName_ on 12/23/11.

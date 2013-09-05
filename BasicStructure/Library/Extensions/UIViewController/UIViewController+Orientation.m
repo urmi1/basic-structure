@@ -1,9 +1,9 @@
 //
 //  UINavigationController+autorotate.m
-//  YouShop
+//  BasicStructure
 //
-//  Created by Jennis on 17/12/12.
-//  Copyright (c) 2012 Jennis. All rights reserved.
+//  Created by __CompanyName__ on 27/05/13.
+//  Copyright (c) 2013 __CompanyName__. All rights reserved.
 //
 
 #import "UIViewController+Orientation.h"

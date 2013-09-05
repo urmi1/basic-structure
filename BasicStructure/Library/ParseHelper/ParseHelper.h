@@ -2,8 +2,8 @@
 //  ParseHelper.h
 //  BasicStructure
 //
-//  Created by Jennis on 02/09/13.
-//  Copyright 2013 __MyCompanyName__. All rights reserved.
+//  Created by __CompanyName__ on 27/05/13.
+//  Copyright (c) 2013 __CompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
