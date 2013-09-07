@@ -267,5 +267,9 @@
     return ([self rangeOfCharacterFromSet:csetNonDigits].location == NSNotFound);
 }
 
+- (NSString*)stringByAddingSpace:(NSString*)stringToAddSpace spaceCount:(NSInteger)spaceCount atIndex:(NSInteger)index{
+    NSString *result = [NSString stringWithFormat:@"%@%@",[@" " stringByPaddingToLength:spaceCount withString:@" " startingAtIndex:0],stringToAddSpace];
+    return result;
+}
 
 @end
