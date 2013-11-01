@@ -14,9 +14,6 @@
 - (UIImage *)imageScaleAspectToMaxSize:(CGFloat)newSize;
 - (UIImage *)imageScaleAndCropToMaxSize:(CGSize)newSize;
 
--(UIImage *)resizeImage:(CGSize)pSize;
-
-
 typedef enum {
     MGImageResizeCrop, // analogous to UIViewContentModeScaleAspectFill, i.e. "best fit" with no space around.
     MGImageResizeCropStart,

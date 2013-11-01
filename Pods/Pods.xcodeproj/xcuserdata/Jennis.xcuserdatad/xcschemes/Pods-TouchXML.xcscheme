@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05AA7B85EFB74A838A86EEF5"
+               BlueprintIdentifier = "0B8A2F4C27DF494496046EED"
                BuildableName = "libPods-TouchXML.a"
                BlueprintName = "Pods-TouchXML"
                ReferencedContainer = "container:Pods.xcodeproj">

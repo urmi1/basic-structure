@@ -70,57 +70,6 @@
    return newImage;
 }
 
-
--(UIImage *)resizeImage:(CGSize)pSize
-{
-	CGImageRef imageRef = [self CGImage];
-	CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(imageRef);
-	CGColorSpaceRef colorSpaceInfo = CGColorSpaceCreateDeviceRGB();
-	
-	if (alphaInfo == kCGImageAlphaNone)
-		alphaInfo = kCGImageAlphaNoneSkipLast;
-	
-	CGContextRef bitmap;
-	
-	if (self.imageOrientation == UIImageOrientationUp | self.imageOrientation == UIImageOrientationDown) {
-		bitmap = CGBitmapContextCreate(NULL, pSize.width, pSize.height, CGImageGetBitsPerComponent(imageRef), CGImageGetBytesPerRow(imageRef), colorSpaceInfo, alphaInfo);
-		
-	} else {
-		bitmap = CGBitmapContextCreate(NULL, pSize.height, pSize.width, CGImageGetBitsPerComponent(imageRef), CGImageGetBytesPerRow(imageRef), colorSpaceInfo, alphaInfo);
-		
-	}
-	
-	if (self.imageOrientation == UIImageOrientationLeft) {
-		NSLog(@"image orientation left");
-		CGContextRotateCTM (bitmap, DegreesToRadians(90));
-		CGContextTranslateCTM (bitmap, 0, -pSize.height);
-		
-	} else if (self.imageOrientation == UIImageOrientationRight) {
-		NSLog(@"image orientation right");
-		CGContextRotateCTM (bitmap, DegreesToRadians(-90));
-		CGContextTranslateCTM (bitmap, -pSize.width, 0);
-		
-	} else if (self.imageOrientation == UIImageOrientationUp) {
-		NSLog(@"image orientation up");
-		
-	} else if (self.imageOrientation == UIImageOrientationDown) {
-		NSLog(@"image orientation down");
-		CGContextTranslateCTM (bitmap, pSize.width,pSize.height);
-		CGContextRotateCTM (bitmap, DegreesToRadians(-180.));
-		
-	}
-	
-	CGContextDrawImage(bitmap, CGRectMake(0, 0, pSize.width, pSize.height), imageRef);
-	CGImageRef ref = CGBitmapContextCreateImage(bitmap);
-	UIImage *result = [UIImage imageWithCGImage:ref];
-	
-	CGContextRelease(bitmap);
-	CGImageRelease(ref);
-	
-	return result;
-}
-
-
 - (UIImage *)imageToFitSize:(CGSize)fitSize method:(MGImageResizingMethod)resizeMethod
 {
 	float imageScaleFactor = 1.0;
@@ -214,7 +163,7 @@
 		// Try older method.
 		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 		CGContextRef context = CGBitmapContextCreate(NULL, fitSize.width, fitSize.height, 8, (fitSize.width * 4),
-													 colorSpace, kCGImageAlphaPremultipliedLast);
+													 colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
 		CGImageRef sourceImg = CGImageCreateWithImageInRect([self CGImage], sourceRect);
 		CGContextDrawImage(context, destRect, sourceImg);
 		CGImageRelease(sourceImg);
