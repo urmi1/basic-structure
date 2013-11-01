@@ -244,4 +244,13 @@ static NSDateFormatter *displayFormatter;
 	return [NSDate timestampFormatString];
 }
 
+- (NSInteger)daysBetweenDate:(NSDate*)toDateTime{
+    NSDate *fromDate,*toDate;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate interval:NULL forDate:self];
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate interval:NULL forDate:toDateTime];
+    NSDateComponents *difference = [calendar components:NSDayCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    return [difference day];
+}
+
 @end

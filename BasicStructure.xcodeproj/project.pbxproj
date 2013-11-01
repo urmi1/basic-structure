@@ -59,6 +59,8 @@
 		9FC41E54175F2C450056FF20 /* done_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC41E50175F2C450056FF20 /* done_button@2x.png */; };
 		9FC41E58175F2D1C0056FF20 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC41E57175F2D1C0056FF20 /* DBHelper.m */; };
 		9FF6F61F175F2F46006635D9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF6F61E175F2F46006635D9 /* libsqlite3.0.dylib */; };
+		9FFCA6CF18239F4400E3BDD5 /* UIColor+TBPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA6CE18239F4400E3BDD5 /* UIColor+TBPalette.m */; };
+		9FFCA6D218239F5100E3BDD5 /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA6D118239F5100E3BDD5 /* UIImage+TBTint.m */; };
 		A0D621A1AF334C79A08A21F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00522559000F4FCBB6D55113 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +155,10 @@
 		9FC41E56175F2D1C0056FF20 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		9FC41E57175F2D1C0056FF20 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
 		9FF6F61E175F2F46006635D9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		9FFCA6CD18239F4400E3BDD5 /* UIColor+TBPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TBPalette.h"; sourceTree = "<group>"; };
+		9FFCA6CE18239F4400E3BDD5 /* UIColor+TBPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TBPalette.m"; sourceTree = "<group>"; };
+		9FFCA6D018239F5100E3BDD5 /* UIImage+TBTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBTint.h"; sourceTree = "<group>"; };
+		9FFCA6D118239F5100E3BDD5 /* UIImage+TBTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBTint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +458,8 @@
 		9FC41E18175F121F0056FF20 /* UIColorExtras */ = {
 			isa = PBXGroup;
 			children = (
+				9FFCA6CD18239F4400E3BDD5 /* UIColor+TBPalette.h */,
+				9FFCA6CE18239F4400E3BDD5 /* UIColor+TBPalette.m */,
 				9FC41E19175F121F0056FF20 /* UIColor+extras.h */,
 				9FC41E1A175F121F0056FF20 /* UIColor+extras.m */,
 			);
@@ -470,6 +478,8 @@
 		9FC41E1E175F121F0056FF20 /* UIImageExtras */ = {
 			isa = PBXGroup;
 			children = (
+				9FFCA6D018239F5100E3BDD5 /* UIImage+TBTint.h */,
+				9FFCA6D118239F5100E3BDD5 /* UIImage+TBTint.m */,
 				9FC41E1F175F121F0056FF20 /* UIImage+Alpha.h */,
 				9FC41E20175F121F0056FF20 /* UIImage+Alpha.m */,
 				9FC41E21175F121F0056FF20 /* UIImage+extras.h */,
@@ -689,6 +699,8 @@
 				9F10B32A17D8C0F40068FC31 /* Login.m in Sources */,
 				9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */,
 				9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */,
+				9FFCA6CF18239F4400E3BDD5 /* UIColor+TBPalette.m in Sources */,
+				9FFCA6D218239F5100E3BDD5 /* UIImage+TBTint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

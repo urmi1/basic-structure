@@ -40,4 +40,6 @@
 + (NSString *)timestampFormatString;
 + (NSString *)dbFormatString;
 
+- (NSInteger)daysBetweenDate:(NSDate*)toDateTime;
+
 @end
