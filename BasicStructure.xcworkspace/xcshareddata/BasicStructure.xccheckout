@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D0C2ED8-694D-42A4-A08E-752F1FFC86E5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BasicStructure</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F535E03-6086-4D47-9993-A3902F2FCAFE</key>
+		<string>https://github.com/Janak-Nirmal/basic-structure</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BasicStructure.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F535E03-6086-4D47-9993-A3902F2FCAFE</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Janak-Nirmal/basic-structure</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F535E03-6086-4D47-9993-A3902F2FCAFE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F535E03-6086-4D47-9993-A3902F2FCAFE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>basic-structure</string>
+		</dict>
+	</array>
+</dict>
+</plist>

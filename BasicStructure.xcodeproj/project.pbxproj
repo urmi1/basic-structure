@@ -13,6 +13,7 @@
 		9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32717D8C0F40068FC31 /* APIClient.m */; };
 		9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32E17D8C3C60068FC31 /* CustomCell.m */; };
 		9F10B33117D8C3C60068FC31 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F10B32F17D8C3C60068FC31 /* CustomCell.xib */; };
+		9F1298151823B512003B0892 /* NSObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1298141823B512003B0892 /* NSObject+Extras.m */; };
 		9F17D41D17532AF60045C504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D41C17532AF60045C504 /* UIKit.framework */; };
 		9F17D41F17532AF60045C504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D41E17532AF60045C504 /* Foundation.framework */; };
 		9F17D42117532AF60045C504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F17D42017532AF60045C504 /* CoreGraphics.framework */; };
@@ -79,6 +80,8 @@
 		9F10B32D17D8C3C60068FC31 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		9F10B32E17D8C3C60068FC31 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		9F10B32F17D8C3C60068FC31 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		9F1298131823B512003B0892 /* NSObject+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extras.h"; sourceTree = "<group>"; };
+		9F1298141823B512003B0892 /* NSObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extras.m"; sourceTree = "<group>"; };
 		9F17D41917532AF60045C504 /* BasicStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F17D41C17532AF60045C504 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F17D41E17532AF60045C504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -219,6 +222,15 @@
 				9F10B32F17D8C3C60068FC31 /* CustomCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		9F1298121823B512003B0892 /* NSObjectExtras */ = {
+			isa = PBXGroup;
+			children = (
+				9F1298131823B512003B0892 /* NSObject+Extras.h */,
+				9F1298141823B512003B0892 /* NSObject+Extras.m */,
+			);
+			path = NSObjectExtras;
 			sourceTree = "<group>";
 		};
 		9F17D41017532AF60045C504 = {
@@ -414,6 +426,7 @@
 		9FC41E0E175F121F0056FF20 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9F1298121823B512003B0892 /* NSObjectExtras */,
 				9F1C27F817ABEC3B00D37F23 /* UINavigationController */,
 				9F1C27FB17ABEC3B00D37F23 /* UIViewController */,
 				9F9D0D59178EDF15000F142F /* UIViewExtras */,
@@ -676,6 +689,7 @@
 				9FC41E2A175F121F0056FF20 /* NSDate+extras.m in Sources */,
 				9FC41E2B175F121F0056FF20 /* NSMutableArray+extras.m in Sources */,
 				9FC41E2C175F121F0056FF20 /* NSString+extras.m in Sources */,
+				9F1298151823B512003B0892 /* NSObject+Extras.m in Sources */,
 				9FC41E2D175F121F0056FF20 /* UIColor+extras.m in Sources */,
 				9FC41E2E175F121F0056FF20 /* UIDevice+extras.m in Sources */,
 				9FC41E2F175F121F0056FF20 /* UIImage+Alpha.m in Sources */,
