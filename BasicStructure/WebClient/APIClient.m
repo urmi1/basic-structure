@@ -22,7 +22,6 @@ static NSString * const kAPIBaseURLString = @"PathToWebservice";
     dispatch_once(&onceToken, ^{
         _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kAPIBaseURLString]];
     });
-    
     return _sharedClient;
 }
 
@@ -31,29 +30,11 @@ static NSString * const kAPIBaseURLString = @"PathToWebservice";
     if (!self) {
         return nil;
     }
-    
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-    //[self setDefaultHeader:@"Accept" value:@"application/json"];
-    
     return self;
 }
 
 #pragma mark - Login details
-
-- (void)getAccount:(NSDictionary *)params success:(void(^)(Login *account))success failure:(void (^)(NSError *))failure{
-    [self genericGetAtPath:kUserLogin withParams:params :^(id JSON) {
-        NSError *error = [self checkResult:JSON];
-        if(!error){
-            Login *account = [Login sharedInstance];
-            [account initWithDictionary:JSON[@"result"][@"data"]];
-            success(account);
-        } else {
-            failure(error);
-        }
-    } failure:^(NSError *error) {
-        failure(error);
-    }];
-}
 
 - (void)getAccount:(NSDictionary *)params callBack:(APIClientCallback)callBack{
     [self genericGetAtPath:kUserLogin withParams:params :^(id JSON) {
@@ -62,49 +43,25 @@ static NSString * const kAPIBaseURLString = @"PathToWebservice";
         if(!error){
             [account initWithDictionary:JSON[@"result"][@"data"]];
         }
-        callBack(error,account,@"This is next parameter",nil);
+        callBack(error,[NSDictionary dictionaryWithObjectsAndKeys: account,@"Account", nil]);
     } failure:^(NSError *error) {
         callBack(error,nil);
     }];
 }
 
-//Handling for multiple paramets would be like following
-/*
--(void)login {
-    [Helper displayLoadingView:self.view viewController:self andMessage:kPleaseWait];
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"value",@"key",@"anothervalue" ,@"anotherkey",nil];
-    [[APIClient sharedClient] getAccount:params callBack:^(NSError *error, id result, ...) {
-        id eachObject;
-        va_list argumentList;
-        if (result){
-            va_start(argumentList, result);
-            while ((eachObject = va_arg(argumentList, id))){
-                NSString *next = eachObject;
-                NSLog(@"%@",next);
-            }
-            va_end(argumentList);
-        }
-    }];
-}
-*/
-
 #pragma mark - List 
 
-- (void)getList:(NSDictionary *)params success:(void(^)(NSMutableArray *list))success failure:(void (^)(NSError *error))failure{
+- (void)getList:(NSDictionary *)params callBack:(APIClientCallback)callBack{
     [self genericGetAtPath:kList withParams:params :^(id JSON) {
         NSError *error = [self checkResult:JSON];
+        NSDictionary *result = nil;
         if(!error){
             NSArray *itemDictionaries = JSON[@"result"][@"data"];
-            NSMutableArray *arrContacts = [NSMutableArray array];
-            for (NSDictionary *dictionary in itemDictionaries) {
-                [arrContacts addObject:[[List alloc] initWithDictionary:dictionary]];
-            }
-            success(arrContacts);
-        } else {
-            failure(error);
+            result = [NSDictionary dictionaryWithObjectsAndKeys:[List arrayOfModelsFromDictionaries:itemDictionaries],@"result", nil];
         }
+        callBack(error,result);
     } failure:^(NSError *error) {
-        failure(error);
+        callBack(error,nil);
     }];
 }
 

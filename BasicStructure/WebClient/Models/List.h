@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface List : NSObject
+@interface List : BSObject
 
 @property (nonatomic,strong) NSString *strListName;
 

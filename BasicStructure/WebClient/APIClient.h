@@ -12,15 +12,14 @@
 @interface APIClient : AFHTTPClient
 
 //Callback typedef
-typedef void(^APIClientCallback)(NSError *error, id result, ...);
+typedef void(^APIClientCallback)(NSError *error, NSDictionary *dictionary);
 
 + (APIClient *)sharedClient;
 
 //Login details
 - (void)getAccount:(NSDictionary *)params callBack:(APIClientCallback)callBack;
-- (void)getAccount:(NSDictionary *)params success:(void(^)(Login *account))success failure:(void (^)(NSError *error))failure;
 
-// Any listing
-- (void)getList:(NSDictionary *)params success:(void(^)(NSMutableArray *list))success failure:(void (^)(NSError *error))failure;
+//Get listing
+- (void)getList:(NSDictionary *)params callBack:(APIClientCallback)callBack;
 
 @end

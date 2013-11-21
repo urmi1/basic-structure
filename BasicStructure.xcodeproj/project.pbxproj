@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F0286EB17B399B600A78B39 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0286EA17B399B600A78B39 /* LocationManager.m */; };
+		9F0C560B183DCC20004A2D3E /* BSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C560A183DCC20004A2D3E /* BSObject.m */; };
 		9F10B32917D8C0F40068FC31 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32317D8C0F40068FC31 /* List.m */; };
 		9F10B32A17D8C0F40068FC31 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32517D8C0F40068FC31 /* Login.m */; };
 		9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10B32717D8C0F40068FC31 /* APIClient.m */; };
@@ -70,6 +71,8 @@
 		2CF854E8C66849BEBD452A73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9F0286E917B399B600A78B39 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		9F0286EA17B399B600A78B39 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		9F0C5609183DCC20004A2D3E /* BSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSObject.h; sourceTree = "<group>"; };
+		9F0C560A183DCC20004A2D3E /* BSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSObject.m; sourceTree = "<group>"; };
 		9F10B32217D8C0F40068FC31 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		9F10B32317D8C0F40068FC31 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		9F10B32417D8C0F40068FC31 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				9F10B32317D8C0F40068FC31 /* List.m */,
 				9F10B32417D8C0F40068FC31 /* Login.h */,
 				9F10B32517D8C0F40068FC31 /* Login.m */,
+				9F0C5609183DCC20004A2D3E /* BSObject.h */,
+				9F0C560A183DCC20004A2D3E /* BSObject.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -714,6 +719,7 @@
 				9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */,
 				9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */,
 				9FFCA6CF18239F4400E3BDD5 /* UIColor+TBPalette.m in Sources */,
+				9F0C560B183DCC20004A2D3E /* BSObject.m in Sources */,
 				9FFCA6D218239F5100E3BDD5 /* UIImage+TBTint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

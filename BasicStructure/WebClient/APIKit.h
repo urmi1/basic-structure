@@ -6,5 +6,6 @@
 //  Copyright (c) 2013 __CompanyName__. All rights reserved.
 //
 
+#import "BSObject.h"
 #import "Login.h"
 #import "List.h"

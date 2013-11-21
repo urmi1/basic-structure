@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Login : NSObject
+@interface Login : BSObject
 
 @property (nonatomic,assign) NSInteger intUserID;
 
