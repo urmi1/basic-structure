@@ -54,6 +54,6 @@
 - (NSString *)urlencode;
 - (BOOL)isNumeric;
 
-- (NSString*)stringByAddingSpace:(NSString*)stringToAddSpace spaceCount:(NSInteger)spaceCount atIndex:(NSInteger)index;
-
+//- (NSString*)stringByAddingSpace:(NSString*)stringToAddSpace spaceCount:(NSInteger)spaceCount atIndex:(NSInteger)index;
+-(NSString*)stringByAddingSpace:(NSInteger)spaceCount atIndex:(NSInteger)index;
 @end

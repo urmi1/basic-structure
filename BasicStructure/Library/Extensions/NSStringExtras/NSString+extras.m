@@ -169,7 +169,7 @@
 
 
 - (NSString*)stringByPercentEscapingCharacters:(NSString*)characters {
-    return (__bridge NSString*)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)self, NULL, (CFStringRef)characters, kCFStringEncodingUTF8);
+    return (__bridge_transfer NSString*)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)self, NULL, (CFStringRef)characters, kCFStringEncodingUTF8);
 }
 
 - (NSString*)stringByEscapingURL {
@@ -177,7 +177,7 @@
 }
 
 - (NSString*)stringByUnescapingURL {
-    return (__bridge NSString*)CFURLCreateStringByReplacingPercentEscapes(NULL, (CFStringRef)self, CFSTR(""));
+    return (__bridge_transfer NSString*)CFURLCreateStringByReplacingPercentEscapes(NULL, (CFStringRef)self, CFSTR(""));
 }
 
 - (BOOL)containsString:(NSString *)aString {
@@ -253,7 +253,7 @@
 
 
 - (NSString *)urlencode {
-	return (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef)self,NULL,(CFStringRef)@"!*'();:@&=+$,/?%#[]",kCFStringEncodingUTF8);
+	return (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef)self,NULL,(CFStringRef)@"!*'();:@&=+$,/?%#[]",kCFStringEncodingUTF8);
 }
 
 
@@ -267,9 +267,14 @@
     return ([self rangeOfCharacterFromSet:csetNonDigits].location == NSNotFound);
 }
 
-- (NSString*)stringByAddingSpace:(NSString*)stringToAddSpace spaceCount:(NSInteger)spaceCount atIndex:(NSInteger)index{
-    NSString *result = [NSString stringWithFormat:@"%@%@",[@" " stringByPaddingToLength:spaceCount withString:@" " startingAtIndex:0],stringToAddSpace];
+//- (NSString*)stringByAddingSpace:(NSString*)stringToAddSpace spaceCount:(NSInteger)spaceCount atIndex:(NSInteger)index{
+//    NSString *result = [NSString stringWithFormat:@"%@%@",[@" " stringByPaddingToLength:spaceCount withString:@" " startingAtIndex:0],stringToAddSpace];
+//    return result;
+//}
+
+
+-(NSString*)stringByAddingSpace:(NSInteger)spaceCount atIndex:(NSInteger)index{
+    NSString *result = [NSString stringWithFormat:@"%@%@",[@" " stringByPaddingToLength:spaceCount withString:@" " startingAtIndex:0],self];
     return result;
 }
-
 @end

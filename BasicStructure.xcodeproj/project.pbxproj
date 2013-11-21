@@ -60,6 +60,18 @@
 		9FC41E53175F2C450056FF20 /* done_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC41E4F175F2C450056FF20 /* done_button.png */; };
 		9FC41E54175F2C450056FF20 /* done_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC41E50175F2C450056FF20 /* done_button@2x.png */; };
 		9FC41E58175F2D1C0056FF20 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC41E57175F2D1C0056FF20 /* DBHelper.m */; };
+		9FDC6EF0183DDFC3004AF16B /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE3183DDFC3004AF16B /* Menu.plist */; };
+		9FDC6EF1183DDFC3004AF16B /* slider-aboutus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE5183DDFC3004AF16B /* slider-aboutus@2x.png */; };
+		9FDC6EF2183DDFC3004AF16B /* slider-home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE6183DDFC3004AF16B /* slider-home@2x.png */; };
+		9FDC6EF3183DDFC3004AF16B /* slider-logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE7183DDFC3004AF16B /* slider-logout@2x.png */; };
+		9FDC6EF4183DDFC3004AF16B /* slider-message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE8183DDFC3004AF16B /* slider-message@2x.png */; };
+		9FDC6EF5183DDFC3004AF16B /* slider-myaccount@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE9183DDFC3004AF16B /* slider-myaccount@2x.png */; };
+		9FDC6EF6183DDFC3004AF16B /* slider-registerkarmacard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EEA183DDFC3004AF16B /* slider-registerkarmacard@2x.png */; };
+		9FDC6EF7183DDFC3004AF16B /* slider-setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EEB183DDFC3004AF16B /* slider-setting@2x.png */; };
+		9FDC6EF8183DDFC3004AF16B /* slider-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EEC183DDFC3004AF16B /* slider-share@2x.png */; };
+		9FDC6EF9183DDFC3004AF16B /* SideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC6EEE183DDFC3004AF16B /* SideMenuController.m */; };
+		9FDC6EFA183DDFC3004AF16B /* SideMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EEF183DDFC3004AF16B /* SideMenuController.xib */; };
+		9FDC6EFE183DE015004AF16B /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC6EFD183DE015004AF16B /* Menu.m */; };
 		9FF6F61F175F2F46006635D9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF6F61E175F2F46006635D9 /* libsqlite3.0.dylib */; };
 		9FFCA6CF18239F4400E3BDD5 /* UIColor+TBPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA6CE18239F4400E3BDD5 /* UIColor+TBPalette.m */; };
 		9FFCA6D218239F5100E3BDD5 /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA6D118239F5100E3BDD5 /* UIImage+TBTint.m */; };
@@ -160,6 +172,20 @@
 		9FC41E50175F2C450056FF20 /* done_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done_button@2x.png"; sourceTree = "<group>"; };
 		9FC41E56175F2D1C0056FF20 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		9FC41E57175F2D1C0056FF20 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		9FDC6EE3183DDFC3004AF16B /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		9FDC6EE5183DDFC3004AF16B /* slider-aboutus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-aboutus@2x.png"; sourceTree = "<group>"; };
+		9FDC6EE6183DDFC3004AF16B /* slider-home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-home@2x.png"; sourceTree = "<group>"; };
+		9FDC6EE7183DDFC3004AF16B /* slider-logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-logout@2x.png"; sourceTree = "<group>"; };
+		9FDC6EE8183DDFC3004AF16B /* slider-message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-message@2x.png"; sourceTree = "<group>"; };
+		9FDC6EE9183DDFC3004AF16B /* slider-myaccount@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-myaccount@2x.png"; sourceTree = "<group>"; };
+		9FDC6EEA183DDFC3004AF16B /* slider-registerkarmacard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-registerkarmacard@2x.png"; sourceTree = "<group>"; };
+		9FDC6EEB183DDFC3004AF16B /* slider-setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-setting@2x.png"; sourceTree = "<group>"; };
+		9FDC6EEC183DDFC3004AF16B /* slider-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-share@2x.png"; sourceTree = "<group>"; };
+		9FDC6EED183DDFC3004AF16B /* SideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuController.h; sourceTree = "<group>"; };
+		9FDC6EEE183DDFC3004AF16B /* SideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuController.m; sourceTree = "<group>"; };
+		9FDC6EEF183DDFC3004AF16B /* SideMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuController.xib; sourceTree = "<group>"; };
+		9FDC6EFC183DE015004AF16B /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		9FDC6EFD183DE015004AF16B /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		9FF6F61E175F2F46006635D9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9FFCA6CD18239F4400E3BDD5 /* UIColor+TBPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TBPalette.h"; sourceTree = "<group>"; };
 		9FFCA6CE18239F4400E3BDD5 /* UIColor+TBPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TBPalette.m"; sourceTree = "<group>"; };
@@ -274,6 +300,7 @@
 		9F17D42217532AF60045C504 /* BasicStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9FDC6EE2183DDFC3004AF16B /* SideMenuController */,
 				9F10B32C17D8C3C60068FC31 /* CustomCell */,
 				9F10B32017D8C0F40068FC31 /* WebClient */,
 				9FB6ECE51786D3E900D158D4 /* Theme */,
@@ -578,6 +605,43 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		9FDC6EE2183DDFC3004AF16B /* SideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				9FDC6EE4183DDFC3004AF16B /* Resource */,
+				9FDC6EFB183DE015004AF16B /* Model */,
+				9FDC6EE3183DDFC3004AF16B /* Menu.plist */,
+				9FDC6EED183DDFC3004AF16B /* SideMenuController.h */,
+				9FDC6EEE183DDFC3004AF16B /* SideMenuController.m */,
+				9FDC6EEF183DDFC3004AF16B /* SideMenuController.xib */,
+			);
+			path = SideMenuController;
+			sourceTree = "<group>";
+		};
+		9FDC6EE4183DDFC3004AF16B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9FDC6EE5183DDFC3004AF16B /* slider-aboutus@2x.png */,
+				9FDC6EE6183DDFC3004AF16B /* slider-home@2x.png */,
+				9FDC6EE7183DDFC3004AF16B /* slider-logout@2x.png */,
+				9FDC6EE8183DDFC3004AF16B /* slider-message@2x.png */,
+				9FDC6EE9183DDFC3004AF16B /* slider-myaccount@2x.png */,
+				9FDC6EEA183DDFC3004AF16B /* slider-registerkarmacard@2x.png */,
+				9FDC6EEB183DDFC3004AF16B /* slider-setting@2x.png */,
+				9FDC6EEC183DDFC3004AF16B /* slider-share@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9FDC6EFB183DE015004AF16B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FDC6EFC183DE015004AF16B /* Menu.h */,
+				9FDC6EFD183DE015004AF16B /* Menu.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -634,17 +698,27 @@
 				9FC41DEC175F0C210056FF20 /* Default-568h@2x.png in Resources */,
 				9FC41DED175F0C210056FF20 /* Default.png in Resources */,
 				9FC41DEE175F0C210056FF20 /* Default@2x.png in Resources */,
+				9FDC6EF4183DDFC3004AF16B /* slider-message@2x.png in Resources */,
+				9FDC6EF7183DDFC3004AF16B /* slider-setting@2x.png in Resources */,
 				9FC41DF0175F0C210056FF20 /* MainViewController.xib in Resources */,
+				9FDC6EF8183DDFC3004AF16B /* slider-share@2x.png in Resources */,
+				9FDC6EF6183DDFC3004AF16B /* slider-registerkarmacard@2x.png in Resources */,
 				9FC41DFB175F0C8F0056FF20 /* InfoPlist.strings in Resources */,
+				9FDC6EF1183DDFC3004AF16B /* slider-aboutus@2x.png in Resources */,
 				9FC41E0A175F11650056FF20 /* DatePickerView.xib in Resources */,
 				9FC41E3A175F22390056FF20 /* loaderbg@2x.png in Resources */,
 				9FC41E3C175F22440056FF20 /* loaderbg.png in Resources */,
+				9FDC6EFA183DDFC3004AF16B /* SideMenuController.xib in Resources */,
 				9FC41E51175F2C450056FF20 /* close_button.png in Resources */,
 				9FC41E52175F2C450056FF20 /* close_button@2x.png in Resources */,
 				9FC41E53175F2C450056FF20 /* done_button.png in Resources */,
 				9FC41E54175F2C450056FF20 /* done_button@2x.png in Resources */,
+				9FDC6EF3183DDFC3004AF16B /* slider-logout@2x.png in Resources */,
 				9FB6ECEB1786D3E900D158D4 /* Themes.plist in Resources */,
+				9FDC6EF2183DDFC3004AF16B /* slider-home@2x.png in Resources */,
 				9F10B33117D8C3C60068FC31 /* CustomCell.xib in Resources */,
+				9FDC6EF0183DDFC3004AF16B /* Menu.plist in Resources */,
+				9FDC6EF5183DDFC3004AF16B /* slider-myaccount@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +789,8 @@
 				9F0286EB17B399B600A78B39 /* LocationManager.m in Sources */,
 				9F499A5917D4CAA8004EDD02 /* ParseHelper.m in Sources */,
 				9F10B32917D8C0F40068FC31 /* List.m in Sources */,
+				9FDC6EF9183DDFC3004AF16B /* SideMenuController.m in Sources */,
+				9FDC6EFE183DE015004AF16B /* Menu.m in Sources */,
 				9F10B32A17D8C0F40068FC31 /* Login.m in Sources */,
 				9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */,
 				9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */,
