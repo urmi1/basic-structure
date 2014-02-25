@@ -10,3 +10,11 @@
 #import "Login.h"
 #import "List.h"
 #import "Menu.h"
+
+#define kList @"PathOfList"
+#define kUserLogin @"UserLogin"
+#define kForgotPassword @"ForgotPassword"
+#define kkUploadMedia @"UploadMedia"
+
+//Callback typedef
+typedef void(^APIClientCallback)(NSError *error, NSDictionary *dictionary);

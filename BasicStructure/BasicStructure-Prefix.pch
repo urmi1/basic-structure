@@ -22,4 +22,6 @@
     #import "UIView+extras.h"
     #import "NSString+extras.h"
     #import "APIClient.h"
+    #import "APIXMLClient.h"
+    #import "Soap.h"
 #endif

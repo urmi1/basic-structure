@@ -11,9 +11,6 @@
 
 static NSString * const kAPIBaseURLString = @"PathToWebservice";
 
-#define kUserLogin @"PathOfLogin"
-#define kList @"PathOfList"
-
 @implementation APIClient
 
 + (instancetype)sharedClient {

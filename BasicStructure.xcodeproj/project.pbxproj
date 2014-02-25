@@ -60,6 +60,20 @@
 		9FC41E53175F2C450056FF20 /* done_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC41E4F175F2C450056FF20 /* done_button.png */; };
 		9FC41E54175F2C450056FF20 /* done_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC41E50175F2C450056FF20 /* done_button@2x.png */; };
 		9FC41E58175F2D1C0056FF20 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC41E57175F2D1C0056FF20 /* DBHelper.m */; };
+		9FD41CAC18BC63BF00A87C14 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9218BC63BF00A87C14 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CAD18BC63BF00A87C14 /* NSMutableArray+Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9418BC63BF00A87C14 /* NSMutableArray+Soap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CAE18BC63BF00A87C14 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9618BC63BF00A87C14 /* Soap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CAF18BC63BF00A87C14 /* SoapArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9818BC63BF00A87C14 /* SoapArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB018BC63BF00A87C14 /* SoapFault.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9B18BC63BF00A87C14 /* SoapFault.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB118BC63BF00A87C14 /* SoapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9D18BC63BF00A87C14 /* SoapHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB218BC63BF00A87C14 /* SoapLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41C9F18BC63BF00A87C14 /* SoapLiteral.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB318BC63BF00A87C14 /* SoapNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CA118BC63BF00A87C14 /* SoapNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB418BC63BF00A87C14 /* SoapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CA318BC63BF00A87C14 /* SoapObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB518BC63BF00A87C14 /* SoapParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CA518BC63BF00A87C14 /* SoapParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB618BC63BF00A87C14 /* SoapReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CA718BC63BF00A87C14 /* SoapReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB718BC63BF00A87C14 /* SoapRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CA918BC63BF00A87C14 /* SoapRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CB818BC63BF00A87C14 /* SoapService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CAB18BC63BF00A87C14 /* SoapService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD41CBB18BC640100A87C14 /* APIXMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD41CBA18BC640100A87C14 /* APIXMLClient.m */; };
 		9FDC6EF0183DDFC3004AF16B /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE3183DDFC3004AF16B /* Menu.plist */; };
 		9FDC6EF1183DDFC3004AF16B /* slider-aboutus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE5183DDFC3004AF16B /* slider-aboutus@2x.png */; };
 		9FDC6EF2183DDFC3004AF16B /* slider-home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC6EE6183DDFC3004AF16B /* slider-home@2x.png */; };
@@ -172,6 +186,35 @@
 		9FC41E50175F2C450056FF20 /* done_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done_button@2x.png"; sourceTree = "<group>"; };
 		9FC41E56175F2D1C0056FF20 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		9FC41E57175F2D1C0056FF20 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		9FD41C9118BC63BF00A87C14 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9FD41C9218BC63BF00A87C14 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		9FD41C9318BC63BF00A87C14 /* NSMutableArray+Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Soap.h"; sourceTree = "<group>"; };
+		9FD41C9418BC63BF00A87C14 /* NSMutableArray+Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Soap.m"; sourceTree = "<group>"; };
+		9FD41C9518BC63BF00A87C14 /* Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soap.h; sourceTree = "<group>"; };
+		9FD41C9618BC63BF00A87C14 /* Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soap.m; sourceTree = "<group>"; };
+		9FD41C9718BC63BF00A87C14 /* SoapArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapArray.h; sourceTree = "<group>"; };
+		9FD41C9818BC63BF00A87C14 /* SoapArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapArray.m; sourceTree = "<group>"; };
+		9FD41C9918BC63BF00A87C14 /* SoapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDelegate.h; sourceTree = "<group>"; };
+		9FD41C9A18BC63BF00A87C14 /* SoapFault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapFault.h; sourceTree = "<group>"; };
+		9FD41C9B18BC63BF00A87C14 /* SoapFault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapFault.m; sourceTree = "<group>"; };
+		9FD41C9C18BC63BF00A87C14 /* SoapHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapHandler.h; sourceTree = "<group>"; };
+		9FD41C9D18BC63BF00A87C14 /* SoapHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapHandler.m; sourceTree = "<group>"; };
+		9FD41C9E18BC63BF00A87C14 /* SoapLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapLiteral.h; sourceTree = "<group>"; };
+		9FD41C9F18BC63BF00A87C14 /* SoapLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapLiteral.m; sourceTree = "<group>"; };
+		9FD41CA018BC63BF00A87C14 /* SoapNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapNil.h; sourceTree = "<group>"; };
+		9FD41CA118BC63BF00A87C14 /* SoapNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapNil.m; sourceTree = "<group>"; };
+		9FD41CA218BC63BF00A87C14 /* SoapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapObject.h; sourceTree = "<group>"; };
+		9FD41CA318BC63BF00A87C14 /* SoapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapObject.m; sourceTree = "<group>"; };
+		9FD41CA418BC63BF00A87C14 /* SoapParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapParameter.h; sourceTree = "<group>"; };
+		9FD41CA518BC63BF00A87C14 /* SoapParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapParameter.m; sourceTree = "<group>"; };
+		9FD41CA618BC63BF00A87C14 /* SoapReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapReachability.h; sourceTree = "<group>"; };
+		9FD41CA718BC63BF00A87C14 /* SoapReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapReachability.m; sourceTree = "<group>"; };
+		9FD41CA818BC63BF00A87C14 /* SoapRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapRequest.h; sourceTree = "<group>"; };
+		9FD41CA918BC63BF00A87C14 /* SoapRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapRequest.m; sourceTree = "<group>"; };
+		9FD41CAA18BC63BF00A87C14 /* SoapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapService.h; sourceTree = "<group>"; };
+		9FD41CAB18BC63BF00A87C14 /* SoapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapService.m; sourceTree = "<group>"; };
+		9FD41CB918BC640100A87C14 /* APIXMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIXMLClient.h; sourceTree = "<group>"; };
+		9FD41CBA18BC640100A87C14 /* APIXMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIXMLClient.m; sourceTree = "<group>"; };
 		9FDC6EE3183DDFC3004AF16B /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 		9FDC6EE5183DDFC3004AF16B /* slider-aboutus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-aboutus@2x.png"; sourceTree = "<group>"; };
 		9FDC6EE6183DDFC3004AF16B /* slider-home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-home@2x.png"; sourceTree = "<group>"; };
@@ -228,6 +271,8 @@
 				9F10B32817D8C0F40068FC31 /* APIKit.h */,
 				9F10B32617D8C0F40068FC31 /* APIClient.h */,
 				9F10B32717D8C0F40068FC31 /* APIClient.m */,
+				9FD41CB918BC640100A87C14 /* APIXMLClient.h */,
+				9FD41CBA18BC640100A87C14 /* APIXMLClient.m */,
 			);
 			path = WebClient;
 			sourceTree = "<group>";
@@ -414,6 +459,7 @@
 		9FC41E00175F11310056FF20 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				9FD41C9018BC63BF00A87C14 /* SOAP */,
 				9F499A5617D4CAA8004EDD02 /* ParseHelper */,
 				9F0286E817B399B600A78B39 /* LocationController */,
 				9FC41E45175F2C100056FF20 /* Encryption */,
@@ -605,6 +651,40 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		9FD41C9018BC63BF00A87C14 /* SOAP */ = {
+			isa = PBXGroup;
+			children = (
+				9FD41C9118BC63BF00A87C14 /* NSData+Base64.h */,
+				9FD41C9218BC63BF00A87C14 /* NSData+Base64.m */,
+				9FD41C9318BC63BF00A87C14 /* NSMutableArray+Soap.h */,
+				9FD41C9418BC63BF00A87C14 /* NSMutableArray+Soap.m */,
+				9FD41C9518BC63BF00A87C14 /* Soap.h */,
+				9FD41C9618BC63BF00A87C14 /* Soap.m */,
+				9FD41C9718BC63BF00A87C14 /* SoapArray.h */,
+				9FD41C9818BC63BF00A87C14 /* SoapArray.m */,
+				9FD41C9918BC63BF00A87C14 /* SoapDelegate.h */,
+				9FD41C9A18BC63BF00A87C14 /* SoapFault.h */,
+				9FD41C9B18BC63BF00A87C14 /* SoapFault.m */,
+				9FD41C9C18BC63BF00A87C14 /* SoapHandler.h */,
+				9FD41C9D18BC63BF00A87C14 /* SoapHandler.m */,
+				9FD41C9E18BC63BF00A87C14 /* SoapLiteral.h */,
+				9FD41C9F18BC63BF00A87C14 /* SoapLiteral.m */,
+				9FD41CA018BC63BF00A87C14 /* SoapNil.h */,
+				9FD41CA118BC63BF00A87C14 /* SoapNil.m */,
+				9FD41CA218BC63BF00A87C14 /* SoapObject.h */,
+				9FD41CA318BC63BF00A87C14 /* SoapObject.m */,
+				9FD41CA418BC63BF00A87C14 /* SoapParameter.h */,
+				9FD41CA518BC63BF00A87C14 /* SoapParameter.m */,
+				9FD41CA618BC63BF00A87C14 /* SoapReachability.h */,
+				9FD41CA718BC63BF00A87C14 /* SoapReachability.m */,
+				9FD41CA818BC63BF00A87C14 /* SoapRequest.h */,
+				9FD41CA918BC63BF00A87C14 /* SoapRequest.m */,
+				9FD41CAA18BC63BF00A87C14 /* SoapService.h */,
+				9FD41CAB18BC63BF00A87C14 /* SoapService.m */,
+			);
+			path = SOAP;
+			sourceTree = "<group>";
+		};
 		9FDC6EE2183DDFC3004AF16B /* SideMenuController */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,39 +841,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F17D42917532AF60045C504 /* main.m in Sources */,
+				9FD41CB618BC63BF00A87C14 /* SoapReachability.m in Sources */,
 				9FC41DEB175F0C210056FF20 /* AppDelegate.m in Sources */,
 				9FC41DF1175F0C210056FF20 /* MainViewController.m in Sources */,
 				9FC41E04175F11440056FF20 /* Helper.m in Sources */,
 				9FC41E09175F11650056FF20 /* DatePickerView.m in Sources */,
+				9FD41CB518BC63BF00A87C14 /* SoapParameter.m in Sources */,
 				9FC41E2A175F121F0056FF20 /* NSDate+extras.m in Sources */,
 				9FC41E2B175F121F0056FF20 /* NSMutableArray+extras.m in Sources */,
 				9FC41E2C175F121F0056FF20 /* NSString+extras.m in Sources */,
+				9FD41CB718BC63BF00A87C14 /* SoapRequest.m in Sources */,
+				9FD41CBB18BC640100A87C14 /* APIXMLClient.m in Sources */,
 				9F1298151823B512003B0892 /* NSObject+Extras.m in Sources */,
 				9FC41E2D175F121F0056FF20 /* UIColor+extras.m in Sources */,
 				9FC41E2E175F121F0056FF20 /* UIDevice+extras.m in Sources */,
 				9FC41E2F175F121F0056FF20 /* UIImage+Alpha.m in Sources */,
 				9FC41E30175F121F0056FF20 /* UIImage+extras.m in Sources */,
+				9FD41CAF18BC63BF00A87C14 /* SoapArray.m in Sources */,
 				9FC41E31175F121F0056FF20 /* UIImage+Resize.m in Sources */,
 				9FC41E32175F121F0056FF20 /* UIImage+RoundedCorner.m in Sources */,
 				9FC41E33175F121F0056FF20 /* UILabel+extras.m in Sources */,
+				9FD41CB318BC63BF00A87C14 /* SoapNil.m in Sources */,
 				9FC41E37175F1C480056FF20 /* LoadingView.m in Sources */,
 				9FC41E44175F2BE00056FF20 /* CustomAlertView.m in Sources */,
 				9FC41E4A175F2C100056FF20 /* NSData+AESEncryption.m in Sources */,
+				9FD41CAC18BC63BF00A87C14 /* NSData+Base64.m in Sources */,
+				9FD41CAE18BC63BF00A87C14 /* Soap.m in Sources */,
 				9FC41E4B175F2C100056FF20 /* NSString+AESEncryption.m in Sources */,
 				9FC41E58175F2D1C0056FF20 /* DBHelper.m in Sources */,
+				9FD41CB818BC63BF00A87C14 /* SoapService.m in Sources */,
+				9FD41CB218BC63BF00A87C14 /* SoapLiteral.m in Sources */,
 				9FB6ECEC1786D3E900D158D4 /* VSTheme.m in Sources */,
 				9FB6ECED1786D3E900D158D4 /* VSThemeLoader.m in Sources */,
 				9F9D0D5C178EDF15000F142F /* UIView+extras.m in Sources */,
 				9F1C27FE17ABEC3B00D37F23 /* UINavigationController+autorotate.m in Sources */,
 				9F1C27FF17ABEC3B00D37F23 /* UIViewController+Orientation.m in Sources */,
+				9FD41CB018BC63BF00A87C14 /* SoapFault.m in Sources */,
 				9F0286EB17B399B600A78B39 /* LocationManager.m in Sources */,
 				9F499A5917D4CAA8004EDD02 /* ParseHelper.m in Sources */,
 				9F10B32917D8C0F40068FC31 /* List.m in Sources */,
 				9FDC6EF9183DDFC3004AF16B /* SideMenuController.m in Sources */,
 				9FDC6EFE183DE015004AF16B /* Menu.m in Sources */,
+				9FD41CB118BC63BF00A87C14 /* SoapHandler.m in Sources */,
 				9F10B32A17D8C0F40068FC31 /* Login.m in Sources */,
 				9F10B32B17D8C0F40068FC31 /* APIClient.m in Sources */,
 				9F10B33017D8C3C60068FC31 /* CustomCell.m in Sources */,
+				9FD41CB418BC63BF00A87C14 /* SoapObject.m in Sources */,
+				9FD41CAD18BC63BF00A87C14 /* NSMutableArray+Soap.m in Sources */,
 				9FFCA6CF18239F4400E3BDD5 /* UIColor+TBPalette.m in Sources */,
 				9F0C560B183DCC20004A2D3E /* BSObject.m in Sources */,
 				9FFCA6D218239F5100E3BDD5 /* UIImage+TBTint.m in Sources */,

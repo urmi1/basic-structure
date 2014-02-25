@@ -11,9 +11,6 @@
 
 @interface APIClient : AFHTTPClient
 
-//Callback typedef
-typedef void(^APIClientCallback)(NSError *error, NSDictionary *dictionary);
-
 + (APIClient *)sharedClient;
 
 //Login details
